@@ -1,5 +1,6 @@
 title: "Tinkoff Python Course"
 logo: logo.png
+author: ""
 
 sphinx:
   config:
