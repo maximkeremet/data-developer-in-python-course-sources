@@ -29,3 +29,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./course-book/_build/html
+
+permissions:
+  contents: write
