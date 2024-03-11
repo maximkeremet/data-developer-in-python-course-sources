@@ -24,14 +24,14 @@ jobs:
       run: |
         jupyter-book build course-book/ --path-output docs/
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
       with:
-        publish_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/html
-        force_orphan: true
+        path: "_build/html"
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
 
 
 permissions:
