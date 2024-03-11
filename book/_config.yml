@@ -1,6 +1,10 @@
 title: "Tinkoff Python Course"
-author: Maxim Keremet
 logo: logo.png
+
+sphinx:
+  config:
+    language: ru
+    html_show_copyright: false
 
 # Force re-execution of notebooks on each build, ensures that the book is executed from scratch each time
 execute:
@@ -28,4 +32,5 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
-  use_repository_button: true
+  use_repository_button: false
+  use_edit_page_button: true
