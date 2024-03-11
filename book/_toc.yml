@@ -1,4 +1,7 @@
 format: jb-book
 root: intro
-chapters:
-- file: notebooks/1_about_interpreter.ipynb
+parts:
+  - caption: Python 101
+    chapters:
+    - file: 01_python_101/1_interpreter.ipynb
+      title: Об интерпретаторе Python
