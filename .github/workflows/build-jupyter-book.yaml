@@ -1,7 +1,7 @@
 name: Build and Deploy Jupyter Book
 
 on:
-  merge:
+  push:
     branches:
       - main
 
