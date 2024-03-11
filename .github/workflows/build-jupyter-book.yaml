@@ -18,11 +18,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install jupyter-book
+        pip install -r requirements.txt
 
     - name: Build Jupyter Book
       run: |
-        jupyter-book build course-book/ --path-output docs/
+        jupyter-book build ./course-book/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
@@ -30,7 +30,7 @@ jobs:
       with:
         publish_branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/html/
+        publish_dir: ./course-book/_build/html/
         force_orphan: true
 
 
