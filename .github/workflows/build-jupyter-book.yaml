@@ -22,7 +22,7 @@ jobs:
 
     - name: Build Jupyter Book
       run: |
-        jupyter-book build course-book/
+        jupyter-book build course-book/ --path-output docs/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
@@ -30,7 +30,7 @@ jobs:
       with:
         publish_branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/
+        publish_dir: _build/html
         force_orphan: true
 
 
