@@ -3,5 +3,7 @@ root: intro
 parts:
   - caption: Python 101
     chapters:
-    - file: 01_python_101/1_interpreter.ipynb
+    - file: 01_python_101/01_interpreter.ipynb
       title: Об интерпретаторе Python
+    - file: 01_python_101/07_installing_de_tools.md
+      title: Устанавливаем IDE и Juputer Notebook
