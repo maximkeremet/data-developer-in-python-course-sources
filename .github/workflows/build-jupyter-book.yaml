@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r ./course-book/requirements.txt
+        pip install -r ./book/requirements.txt
 
     - name: Build Jupyter Book
       run: |
