@@ -5,5 +5,5 @@ parts:
     chapters:
     - file: 01_python_101/01_interpreter.ipynb
       title: Об интерпретаторе Python
-    - file: 01_python_101/07_installing_de_tools.md
+    - file: 01_python_101/07_installing_ide_tools.md
       title: Устанавливаем IDE и Juputer Notebook
