@@ -3,6 +3,10 @@ _build
 deployments*
 .DS_Store
 
+# local autograder runtime files
+*.OTTER_LOG
+*otter_config.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

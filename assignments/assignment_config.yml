@@ -1,0 +1,7 @@
+# ASSIGNMENT CONFIG
+run_tests: true
+export_cell:
+    instructions: "These are some submission instructions."
+generate:
+    lang: python
+runs_on: default
