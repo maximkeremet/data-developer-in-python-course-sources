@@ -7,13 +7,13 @@ parts:
       title: Об интерпретаторе Python
     - file: 01_python_101/02_data_structures_basic.ipynb
       title: Структуры данных в Python (элементарные типы)
-    - file: 01_python_101/03_data_structures_complex.ipynb
+    - file: 01_python_101/02_data_structures_complex.ipynb
       title: Структуры данных в Python (составные типы)
-    - file: 01_python_101/04_conditional_statements.ipynb
+    - file: 01_python_101/03_conditional_statements.ipynb
       title: Управляющие конструкции
-    - file: 01_python_101/05_loops.ipynb
+    - file: 01_python_101/04_loops.ipynb
       title: Циклы и как с ними работать
-    - file: 01_python_101/06_functions.ipynb
+    - file: 01_python_101/05_functions.ipynb
       title: Анатомия функции
     - file: 01_python_101/07_installing_ide_tools.md
       title: Устанавливаем IDE и Juputer Notebook
