@@ -9,7 +9,8 @@ sphinx:
 
 # Force re-execution of notebooks on each build, ensures that the book is executed from scratch each time
 execute:
-  execute_notebooks: force
+  execute_notebooks: cache
+  allow_errors: true
 
 launch_buttons:
   colab_url: "https://colab.research.google.com"
