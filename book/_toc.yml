@@ -19,5 +19,5 @@ parts:
       title: Устанавливаем IDE и Juputer Notebook
     - file: 01_python_101/08_virtualenv_and_poetry.ipynb
       title: Виртуальные окружения в Python и управление зависимостями с помощью Poetry
-    - file: 01_python_101/09_oop.ipynb
+    - file: 01_python_101/10_oop.ipynb
       title: Концепция объектно-ориентированного программирования (ООП) в Python
