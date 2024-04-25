@@ -1,0 +1,21 @@
+name: Sync grader configs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+    - 'assignments/*/*/autograder/*.zip'
+
+jobs:
+  sync-grader-configs:
+    runs-on: [global-pool]
+    steps:
+      - name: Check changed files
+        id: file-changes
+        uses: dorny/paths-filter@v3
+        with:
+          list-files: "shell"
+          filters: |
+            grader_configs:
+              - added|modified: 'assignments/*/*/autograder/*.zip'
